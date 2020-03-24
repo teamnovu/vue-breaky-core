@@ -1,7 +1,7 @@
 {
   "name": "@teamnovu/vue-breaky-core",
-  "version": "0.0.0",
-  "description": "Show Tailwind CSS Breakpoints in Vuejs",
+  "version": "0.1.0",
+  "description": "Core Package for Breaky Plugins",
   "repository": "teamnovu/vue-breaky-core",
   "license": "MIT",
   "contributors": [

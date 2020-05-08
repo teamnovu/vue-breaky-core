@@ -1,5 +1,8 @@
 <template>
-  <div :class="`color-scheme-${colorScheme}`">
+  <div
+    class="breaky"
+    :class="`color-scheme-${colorScheme}`"
+  >
     <div
       v-show="!TOGGLE_ME_TO_HIDE_BREAKY"
       ref="breaky"
@@ -359,6 +362,12 @@ export default {
 
 .color-scheme-dark {
   @include dark-card;
+}
+
+@media print {
+  .breaky {
+    @apply hidden;
+  }
 }
 
 .card {

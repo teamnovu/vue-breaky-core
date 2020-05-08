@@ -27,13 +27,13 @@
           <!-- END Selected Panel -->
           <ul class="relative">
             <li
-              v-for="(bp, name, index) in breakpoints"
+              v-for="(bp, name, index) in mappedBreakpoints"
               :key="index"
               class="flex justify-between py-2 px-4"
               :class="{ 'opacity-50': selected !== index }"
             >
               <span>{{ name }} </span>
-              <span class="ml-5">{{ bp }}</span>
+              <span class="ml-5">{{ bp }}px</span>
             </li>
           </ul>
         </div>
@@ -91,14 +91,21 @@ export default {
 
   computed: {
     /**
-     * Convert the breakpoints to integers
+     * Convert the breakpoints to integers and filter non-pixel values
      * example: 1024px => 1024
      */
     mappedBreakpoints () {
       const mappedScreens = {}
 
       Object.keys(this.breakpoints).forEach(
-        (key) => (mappedScreens[key] = parseInt(this.breakpoints[key]))
+        (key) => {
+          if (typeof this.breakpoints[key] === 'string') {
+            const match = this.breakpoints[key].match(/(\d+)px/)
+            if (match) {
+              mappedScreens[key] = parseInt(match[1])
+            }
+          }
+        }
       )
 
       return mappedScreens
@@ -145,7 +152,7 @@ export default {
       // check if the screen is smaller than the smallest
       // defined screen in the tailwind config
       if (this.foundBreakpoint === 0) {
-        return `< ${this.breakpoints[this.sortedBreakpoints[0]]}`
+        return `< ${this.mappedBreakpoints[this.sortedBreakpoints[0]]}px`
       }
 
       // when no breakpoint has been found take the highest

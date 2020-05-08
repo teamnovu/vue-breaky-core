@@ -14,7 +14,8 @@ module.exports = {
       xl: '1280px',
       'full-hd': '1920px',
       '2k': '2048px',
-      '4k': '3840px'
+      '4k': '3840px',
+      print: { raw: 'print' }
     }
   },
   variants: {},

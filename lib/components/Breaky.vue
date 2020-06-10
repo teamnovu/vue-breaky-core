@@ -6,7 +6,7 @@
     <div
       v-show="!TOGGLE_ME_TO_HIDE_BREAKY"
       ref="breaky"
-      class="card text-xs fixed flex p-2 z-50 shadow cursor-pointer antialiased font-bold tracking-wide"
+      class="card text-xs fixed flex p-2 z-50 shadow cursor-pointer antialiased font-bold leading-normal tracking-wide"
       :class="[
         draggableTransitionClasses,
         {
@@ -362,6 +362,10 @@ export default {
 
 .color-scheme-dark {
   @include dark-card;
+}
+
+.breaky {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 @media print {

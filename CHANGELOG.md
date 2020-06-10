@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/teamnovu/vue-breaky-core/compare/v0.1.2...v0.1.3) (2020-06-10)
+
+
+### Bug Fixes
+
+* set fix font and line-height ([d78357b](https://github.com/teamnovu/vue-breaky-core/commit/d78357b649870d066c33d74c0858dbbbaa804ef5))
+
 ### [0.1.2](https://github.com/teamnovu/vue-breaky-core/compare/v0.1.1...v0.1.2) (2020-06-10)
 
 ### [0.1.1](https://github.com/teamnovu/vue-breaky-core/compare/v0.1.0...v0.1.1) (2020-05-08)

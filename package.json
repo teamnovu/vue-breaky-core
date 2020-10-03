@@ -1,6 +1,6 @@
 {
   "name": "@teamnovu/vue-breaky-core",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Core Package for Breaky Plugins",
   "repository": "teamnovu/vue-breaky-core",
   "license": "MIT",

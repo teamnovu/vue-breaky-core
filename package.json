@@ -28,7 +28,7 @@
   "dependencies": {
     "interactjs": "^1.9.7",
     "lodash": "^4.17.15",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^8.0.2",
     "tailwindcss": "^1.9.6",
     "vue": "^2.6.11"
